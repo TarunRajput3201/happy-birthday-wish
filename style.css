@@ -1,0 +1,23 @@
+<!-- FILE: styles.css -->
+:root{--bg:#fff7f3;--accent:#ff6b6b;--muted:#6b6b6b;--card:#ffffff}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; background:linear-gradient(180deg,var(--bg),#fff); color:#222}
+.site-header{background:transparent; padding:12px 20px}
+.nav{display:flex;align-items:center;justify-content:space-between;max-width:1000px;margin:0 auto}
+.brand{font-weight:700;text-decoration:none;color:var(--accent)}
+.nav-links a{margin-left:16px;text-decoration:none;color:var(--muted)}
+.hero{padding:56px 20px;text-align:center}
+.hero h1{font-size:clamp(28px,6vw,48px);margin:0 0 8px}
+.lead{color:var(--muted);margin-bottom:18px}
+.controls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
+.controls input{padding:10px;border-radius:8px;border:1px solid #eee;min-width:180px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;background:var(--accent);color:#fff}
+.card{max-width:720px;margin:18px auto;padding:14px;border-radius:12px;background:var(--card);box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.container{max-width:900px;margin:36px auto;padding:0 20px}
+.wishes-list{list-style:disc;padding-left:20px}
+.actions{margin-top:18px;display:flex;gap:10px;align-items:center}
+.footer{text-align:center;padding:18px 10px;color:var(--muted);font-size:14px}
+#confettiArea{position:fixed;left:0;top:0;right:0;bottom:0;pointer-events:none;overflow:hidden}
+.balloon{position:absolute;width:28px;height:40px;border-radius:50%;opacity:0.9}
+
+@media (min-width:700px){.nav-links a{margin-left:24px}}
