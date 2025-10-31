@@ -1,54 +1,23 @@
-<!--
-Project: Happy Birthday - Basic Multi-page Site
-Files included in this single document (copy each section into a separate file):
-- index.html
-- wishes.html
-- about.html
-- styles.css
-- script.js
-Instructions: create a folder, create each file below with the indicated filename, open index.html in your browser.
--->
-
-<!-- FILE: index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Happy Birthday!</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="brand">🎉 Happy Birthday</a>
-      <div class="nav-links">
-        <a href="wishes.html">Wishes</a>
-        <a href="about.html">About</a>
-      </div>
-    </nav>
-  </header>
+  <h1>🎉 Happy Birthday! 🎂</h1>
+  <p>Welcome to your special surprise site 🎈</p>
 
-  <main class="hero">
-    <h1 id="greet">Happy Birthday!</h1>
-    <p class="lead">Make someone's day special — simple site with multiple pages and a surprise.</p>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="wishes.html">Wishes</a> |
+    <a href="about.html">About</a>
+  </nav>
 
-    <div class="controls">
-      <input id="nameInput" placeholder="Enter name (optional)" aria-label="Name">
-      <button id="personalizeBtn">Personalize</button>
-      <a class="btn" href="wishes.html">See Wishes</a>
-    </div>
-
-    <div class="card">
-      <p>Tip: click <strong>Surprise</strong> on the Wishes page for a fun animation.</p>
-    </div>
-  </main>
-
-  <footer class="footer">Made with ❤️ — open-source, copy &amp; edit.</footer>
+  <button onclick="showSurprise()">Click for a Surprise 🎁</button>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
